@@ -20,6 +20,11 @@ import "fmt"
 输出格式
 共m行，每行输出一个询问的结果。*/
 
+//1 2 3 4 5 6 7 8 9 10
+//0 1 3 6 10 15
+//0 1 2 3 4
+// [3, 4] 5 - 3
+
 func main() {
 	var n, m int
 	fmt.Scan(&n, &m)
@@ -33,9 +38,8 @@ func main() {
 	}
 
 	for i := 0; i < m; i++ {
-		l, r := 0, 0
+		l, r := 0, 0 // 从1开始,第l和r个, [l, r]
 		fmt.Scan(&l, &r)
-		fmt.Println(preSum[r] - preSum[l-1])
+		fmt.Println(preSum[r] - preSum[l-1]) // 下标从0开始, preSum[r+1] - preSum[l]
 	}
-
 }
