@@ -8,6 +8,10 @@ import (
 )
 
 func main() {
+	a, b := 3, 1
+	a += 1 - b
+	fmt.Println(a)
+
 	t := 1
 	fmt.Println('a' + t)
 	//s := ""
