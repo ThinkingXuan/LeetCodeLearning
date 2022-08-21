@@ -42,7 +42,7 @@ func getNums(diff []int) []int {
 	return nums
 }
 
-// 更改原数组的值（left到right）
+// 更改原数组的值（left到right）下标从0开始。
 func increase(left, right int, diff []int, num int) {
 	diff[left] += num
 	if right+1 < len(diff) {
