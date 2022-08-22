@@ -38,7 +38,10 @@ func main() {
 		return nums[i] > target
 	})
 
-	_ = []interface{}{lowerBound, upbound}
+	// 第二种写法
+	// upbound := sort.SearchInts(nums, target+1)
+
+	_ = []interface{}{lowerBound, upbound - 1}
 }
 
 func peakIndexInMountainArray(arr []int) int {
