@@ -74,7 +74,6 @@ func findItinerary(tickets [][]string) []string {
 			dfs(v)
 		}
 		ans = append([]string{path}, ans...)
-
 	}
 
 	dfs("JFK")
