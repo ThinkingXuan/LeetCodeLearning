@@ -5,7 +5,7 @@ package main
 func mul(a int, k int) int {
 	ans := 0
 	for k > 0 {
-		if (k & 1) == 1 {
+		if (k & 1) == 1 { // k 是奇数
 			// 当前最低位为1，结果里加上a
 			ans += a
 		}
